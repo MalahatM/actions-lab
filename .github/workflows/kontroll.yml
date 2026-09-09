@@ -1,0 +1,13 @@
+name: Kontroll
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  kontroll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kontrollera pull request
+        run: echo "Pull request kontrollerad!"
