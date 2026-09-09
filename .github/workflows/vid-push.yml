@@ -1,0 +1,13 @@
+name: Vid push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  visa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Visa meddelande
+        run: echo "Någon pushade till main!"
